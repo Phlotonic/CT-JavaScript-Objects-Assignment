@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Application</title>
+    <script src="bank.js" defer></script>
+</head>
+<body>
+    <h1>Simple Banking Application</h1>
+    <div>
+        <h2>Create Account</h2>
+        <input type="text" id="accountNumberInput" placeholder="Account Number">
+        <input type="text" id="ownerInput" placeholder="Owner">
+        <input type="number" id="balanceInput" placeholder="Initial Balance">
+        <button onclick="createAccount()">Create Account</button>
+    </div>
+    <div>
+        <h2>Deposit Funds</h2>
+        <input type="text" id="accountNumberInput" placeholder="Account Number">
+        <input type="number" id="amountInput" placeholder="Amount">
+        <button onclick="depositFunds()">Deposit</button>
+    </div>
+    <div>
+        <h2>Withdraw Funds</h2>
+        <input type="text" id="accountNumberInput" placeholder="Account Number">
+        <input type="number" id="amountInput" placeholder="Amount">
+        <button onclick="withdrawFunds()">Withdraw</button>
+    </div>
+    <div>
+        <h2>Calculate Interest</h2>
+        <input type="text" id="accountNumberInput" placeholder="Account Number">
+        <input type="number" id="rateInput" placeholder="Interest Rate (%)">
+        <input type="number" id="yearsInput" placeholder="Years">
+        <button onclick="calculateInterest()">Calculate Interest</button>
+    </div>
+    <div>
+        <h2>Accounts</h2>
+        <div id="accounts"></div>
+    </div>
+    <div>
+        <h2>Transaction Output</h2>
+        <p id="transactionOutput"></p>
+    </div>
+    <div>
+        <h2>Interest Output</h2>
+        <p id="interestOutput"></p>
+    </div>
+</body>
+</html>
